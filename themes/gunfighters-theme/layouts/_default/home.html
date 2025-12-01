@@ -1,0 +1,34 @@
+{{ define "main" }}
+  <div class="hero">
+    <h1>{{ site.Title }}</h1>
+    <p class="tagline">{{ site.Params.tagline }}</p>
+    <p>{{ site.Params.description }}</p>
+    <div class="hero-buttons">
+      <a href="{{ "/showcase" | relURL }}" class="btn btn-primary">Our Games</a>
+      <a href="{{ "/contact" | relURL }}" class="btn btn-secondary">Get in Touch</a>
+    </div>
+  </div>
+
+  {{ .Content }}
+
+  <section>
+    <h2>What We Do</h2>
+    <div class="features">
+      <div class="feature">
+        <div class="icon">🎮</div>
+        <h3>Game Development</h3>
+        <p>We create immersive gaming experiences that captivate players and tell compelling stories.</p>
+      </div>
+      <div class="feature">
+        <div class="icon">🎨</div>
+        <h3>Creative Design</h3>
+        <p>Our talented artists craft stunning visuals and memorable characters that bring our worlds to life.</p>
+      </div>
+      <div class="feature">
+        <div class="icon">🚀</div>
+        <h3>Innovation</h3>
+        <p>We push boundaries with innovative gameplay mechanics and cutting-edge technology.</p>
+      </div>
+    </div>
+  </section>
+{{ end }}
