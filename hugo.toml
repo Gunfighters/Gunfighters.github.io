@@ -1,0 +1,28 @@
+baseURL = 'https://gunfighters.github.io/'
+languageCode = 'en'
+title = 'Gunfighters Studio'
+theme = 'gunfighters-theme'
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[params]
+  description = "Independent video game studio crafting immersive gaming experiences"
+  tagline = "Creating Games That Tell Stories"
+  email = "contact@gunfighters.studio"
+
+[menus]
+  [[menus.main]]
+    name = "Home"
+    pageRef = "/"
+    weight = 10
+  [[menus.main]]
+    name = "Showcase"
+    pageRef = "/showcase"
+    weight = 20
+  [[menus.main]]
+    name = "Contact"
+    pageRef = "/contact"
+    weight = 30
